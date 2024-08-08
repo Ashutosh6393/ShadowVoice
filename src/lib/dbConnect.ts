@@ -1,5 +1,10 @@
 import mongoose from "mongoose";
 
+// nextJS is a edge time framework so we should always check 
+// if the db connection exists or not, if it exists use it, otherwise
+// use the previous connection.
+
+
 type ConnectionObject = {
   isConnected?: number;
 };
